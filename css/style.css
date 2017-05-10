@@ -1,4 +1,4 @@
-.col-6{
+.col-6AUP{
     background: white;
     opacity: 0.8;
 }
@@ -84,12 +84,13 @@
 
 .div1BckImgAUP{
     background: url("../img/TheFoto1.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover ;
 }
 .div2BckImgAUP{
     background-image: url("../img/TheFoto2.jpg");
-    background-size: 100%;
+    background-size: cover;
 }
+
 
 
 

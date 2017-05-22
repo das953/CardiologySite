@@ -31,6 +31,41 @@
     margin-bottom: 2%;
     margin-top: 2%;
 }
+ul.hor_nav {
+    margin: 2px;
+    padding: 2px;
+}
+ul.hor_nav li {
+    display: inline;
+    margin-right: 4px;
+    padding: 2px;
+}
+
+div.content {
+    clear: both;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+
+.TheGalochkiT > li:before{
+    content: "✔	 ";
+    font-family:"Arial Black" ;
+    color: green;
+}
+
+.TheKrujochkiT > li:before{
+    content: "• ";
+    font-family:"Arial Black" ;
+    font-size: 20px;
+    color: green;
+}
+
+.ULNone{
+    list-style-type: none;
+    padding-left: 0;
+}
 
 
 

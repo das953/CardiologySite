@@ -84,11 +84,11 @@
 
 .div1BckImgAUP{
     background: url("../img/TheFoto1.jpg") no-repeat;
-    background-size: cover ;
+    background-size: contain;
 }
 .div2BckImgAUP{
-    background-image: url("../img/TheFoto2.jpg");
-    background-size: cover;
+    background: url("../img/TheFoto2.jpg") no-repeat;
+    background-size: contain;
 }
 
 

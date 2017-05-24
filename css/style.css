@@ -1,40 +1,57 @@
-/*---------------------------Roboto font---------------------------------*/
-@font-face {
-    font-family: "RobotoRegular";
-    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+.body {
+    color: black;
+    background: white;
 }
 
-@font-face {
-    font-family: "RobotoLight";
-    src: url("../fonts/RobotoLight/RobotoLight.eot");
-    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
-    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+.ForListGroup_itemTxt {
+    list-style: upper-roman;
+    font-size: 15px;
+    margin-top: 15px;
 }
 
-@font-face {
-    font-family: "RobotoMedium";
-    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
-    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
-    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+.ListGrouLi {
+    margin-top: 10px;
 }
 
-@font-face {
-    font-family: "RobotoBold";
-    src: url("../fonts/RobotoBold/RobotoBold.eot");
-    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
-    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+.ForZalupa {
+    margin-top: 20px;
+}
+
+
+.line_table {
+    margin-top: 5em;
+    background: #b1ab95;
+    height: 0.3em;
+}
+
+.table-bordered {
+    border: 1.5px solid #000000;
+}
+
+.table-bordered > tbody > tr > td {
+    border: 1.5px solid #000000;
+}
+
+.table-bordered > tbody > tr > th {
+    border: none;
+    background: #cad962;
+}
+
+ol > li {
+    padding-bottom: 5px;
+}
+
+#pen {
+    padding-left: 13px;
+}
+
+.lina_copy {
+    background-color: rgb( 205, 220, 57 );
+    top: 50.412cm;
+    width: 35%;
+    height: 0.071cm;
+    z-index: 25;
+}
+img{
+    margin-bottom: 3em;
 }

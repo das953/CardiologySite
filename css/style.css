@@ -41,10 +41,10 @@
 
 
 .carousel-main .item .main-slider-item {
-    max-height: 640px;
-    height: 640px;
+    max-height: 700px;
+    height: 700px;
     width: 100%;
-    background-position: 50% 50%;
+    background-position: 40% 40%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -60,6 +60,7 @@
 
 .carousel-main .item .main-slider-item.it3 {
     background-image: url('../img/12.jpg');
+    background-position: 40% 20%;
 }
 .carousel-main .carousel-caption{
     left: 10%;
@@ -75,28 +76,4 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#gallery-top-carousel{
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: 20px;
-}
-#gallery-top-carousel .carousel-control.left,.carousel-control.right {background-image:none;}
-.gallery-top-carousel-main .item .main-slider-item {
-    max-height: 405px;
-    height: 405px;
-    width: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.gallery-top-carousel-main .item .main-slider-item.it1 {
-    background-image: url("../img/10.jpg");
-}
-.gallery-top-carousel-main .item .main-slider-item.it2 {
-    background-image: url("../img/11.jpg");
-}
-.gallery-top-carousel-main .item .main-slider-item.it3 {
-    background-image: url("../img/12.jpg");
 }

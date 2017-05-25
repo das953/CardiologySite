@@ -137,11 +137,38 @@ div.content {
     right: auto;
 }
 
-.pic {
+.pic0 {
     background-image: url('../img/20.jpg');
-    max-height: 150px;
-    width: 150px;
-    height: 150px;
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic1 {
+    background-image: url('../img/21.jpg');
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic2 {
+    background-image: url('../img/22.jpg');
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic3 {
+    background-image: url('../img/23.jpg');
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;

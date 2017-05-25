@@ -41,8 +41,8 @@
 
 
 .carousel-main .item .main-slider-item {
-    max-height: 700px;
-    height: 700px;
+
+    min-height: 700px;
     width: 100%;
     background-position: 40% 40%;
     background-repeat: no-repeat;
@@ -76,4 +76,9 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
 }

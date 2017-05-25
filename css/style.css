@@ -76,3 +76,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.gallery-top-carousel-main .item .main-slider-item.it1 {
+    background-image: url("../img/10.jpg");
+}
+.gallery-top-carousel-main .item .main-slider-item.it2 {
+    background-image: url("../img/11.jpg");
+}
+.gallery-top-carousel-main .item .main-slider-item.it3 {
+    background-image: url("../img/12.jpg");
+}

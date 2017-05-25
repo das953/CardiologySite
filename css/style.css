@@ -234,7 +234,21 @@ div.content {
 }
 #gallery-bottom-carousel .it8{
     background-image: url("../img/14.jpg");
+}#gallery-bottom-carousel .it9{
+    background-image: url("../img/15.jpg");
+}#gallery-bottom-carousel .it10{
+    background-image: url("../img/16.jpg");
+}#gallery-bottom-carousel .it11{
+    background-image: url("../img/17.jpg");
+}#gallery-bottom-carousel .it12{
+    background-image: url("../img/18.jpg");
 }
+#gallery-bottom-carousel a div{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
 #gallery-bottom-carousel .carousel-control 			 { width:  4%; }
 #gallery-bottom-carousel .carousel-control.left{
     margin-left: -30px;

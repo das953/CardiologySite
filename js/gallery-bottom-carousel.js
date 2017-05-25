@@ -23,14 +23,27 @@ $(document).ready(function(){
     var totalItems = $('.gallery-bottom-carousel-main .item').length;
     var currentIndex = $('div.active').index() + 1;
     $('.num').html(''+currentIndex+'/'+totalItems+'');
-    $('#gallery-bottom-carousel .carousel-control.right').on('click', function () {
-        currentIndex = (currentIndex )%(totalItems)+1;
-        $('.num').html(''+currentIndex+'/'+totalItems+'');
-    });
+   
     $('#gallery-bottom-carousel .carousel-control.left').on('click', function () {
-        currentIndex = (currentIndex )%(totalItems)-1;
+        /*currentIndex = (currentIndex )%(totalItems)-1;
         if(currentIndex<=0)
             currentIndex = currentIndex + totalItems;
-        $('.num').html(''+currentIndex+'/'+totalItems+'');
+        $('.num').html(''+currentIndex+'/'+totalItems+'');*/
     });
 });
+
+function checkNum(){
+	$('#gallery-bottom-carousel .item.active').each(function(){
+
+				var currentIndex = $(this).attr('numberSlide')
+				$('.num').html(''+currentIndex+'/'+8+'')
+			
+		
+	})
+}
+
+$(document).on('click', '#gallery-bottom-carousel .carousel-control', function(){
+	setTimeout(function(){
+		checkNum()
+	},600)
+	});

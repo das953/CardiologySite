@@ -1,3 +1,45 @@
+/*---------------------------Roboto font---------------------------------*/
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
 .carousel-main .item .main-slider-item {
     max-height: 640px;
     height: 640px;
@@ -8,18 +50,29 @@
 }
 
 .carousel-main .item .main-slider-item.it1 {
-    background-image: url("../img/10.jpg");
+    background-image: url('../img/10.jpg');
+
 }
 
 .carousel-main .item .main-slider-item.it2 {
-    background-image: url("../img/11.jpg");
+    background-image: url('../img/11.jpg');
 }
 
 .carousel-main .item .main-slider-item.it3 {
-    background-image: url("../img/12.jpg");
+    background-image: url('../img/12.jpg');
 }
 .carousel-main .carousel-caption{
     left: 10%;
     top: 70%;
     right: auto;
+}
+
+.pic {
+    background-image: url('../img/20.jpg');
+    max-height: 150px;
+    width: 150px;
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

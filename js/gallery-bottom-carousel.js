@@ -20,7 +20,7 @@ $(document).ready(function(){
             next.children(':first-child').clone().appendTo($(this));
         }
     });
-    var totalItems = $('.item').length;
+    var totalItems = $('.gallery-bottom-carousel-main .item').length;
     var currentIndex = $('div.active').index() + 1;
     $('.num').html(''+currentIndex+'/'+totalItems+'');
     $('#gallery-bottom-carousel .carousel-control.right').on('click', function () {

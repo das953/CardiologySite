@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3 col-sm-6 col-xs-12 g"><a href="#"><div class="bottom-item"></div></a></div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#myCarousel').carousel({
+            interval: 5000
+            , pause: 'hover'
+            , wrap: true
+        });
+
+        $('.carousel .item').each(function(){
+            var next = $(this);
+            var last;
+            for (var i=0;i<3;i++) {
+                next=next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                last=next.children(':first-child').clone().appendTo($(this));
+            }
+            last.addClass('rightest');
+        });
+    });
+</script>
+</body>
+</html>

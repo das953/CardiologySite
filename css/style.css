@@ -142,7 +142,7 @@ div.content {
 .pic0 {
     background-image: url('../img/20.jpg');
     max-height: 200px;
-    width: 200px;
+
     height: 200px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -151,7 +151,7 @@ div.content {
 .pic1 {
     background-image: url('../img/21.jpg');
     max-height: 200px;
-    width: 200px;
+
     height: 200px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ div.content {
 .pic2 {
     background-image: url('../img/22.jpg');
     max-height: 200px;
-    width: 200px;
+
     height: 200px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ div.content {
 .pic3 {
     background-image: url('../img/23.jpg');
     max-height: 200px;
-    width: 200px;
+
     height: 200px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -299,7 +299,7 @@ div.content {
     width: 1100px!important;
     margin: 0 auto;
 }
-.col-md-10 {
+.kakawka {
     padding-left: 0 !important;
     padding-right: 0 !important;
     float: none!important;
@@ -335,6 +335,21 @@ div.content {
          margin-left: 0 !important;
 
     }
+}
+
+.row2{
+    height: 200px;
+}
+.row3{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding-top: 60px;
+}
+.ebanko{
+    background-color: white;
+    height: 400px;
+    border: hidden;
 }
 
 /*@media (min-width: 767px) and (max-width: 992px ) {*/

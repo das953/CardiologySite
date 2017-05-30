@@ -318,6 +318,10 @@ div.content {
     display: flex !important;
     justify-content: center;
 }
+#correctTitleCont{
+    display: flex !important;
+    justify-content: center;
+}
 .col-md-12{
     padding-left: 0 !important;
     padding-right: 0 !important;

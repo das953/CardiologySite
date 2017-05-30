@@ -189,3 +189,585 @@ ol > li {
 .img_youretspnh {
     margin-bottom: 3em;
 }
+
+header{
+    width: 100%;
+    background-color: #00997a;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.header-row{
+    position: relative;
+    border: 0px solid white;
+    height: 140px;
+}
+header .logo{
+    margin-left: 15px;
+    margin-top: 18px;
+    float: left;
+}
+header .logo a{
+    padding: 0;
+}
+header nav{
+    float: right;
+    margin-top: 48px;
+}
+/*Menu links*/
+header a{
+    color: white;
+    font-family: RobotoBold;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    display: block;
+}
+header nav a{
+    border-bottom: 2px solid transparent;
+    margin-left: 6px;
+    text-decoration: none;
+}
+header nav a:link{
+    border-bottom: 2px solid transparent;
+    margin-left: 6px;
+    text-decoration: none;
+}
+header nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: #d0db4b;
+    text-decoration: none;
+    border-bottom: 2px solid #d0db4b;
+}
+.health-link{
+    display: none;
+}
+
+/*Button "Health School" links*/
+.btn-health-school:link {
+    color: #00997a;
+    background-color: #c2e7df;
+    background-image: url("../img/img_header/btn_health_school.png");
+    background-repeat: no-repeat;
+    padding: 13px 13px 13px 42px;
+    background-position-x: 7%;
+    background-position-y: 40%;
+    text-decoration: none;
+    float: right;
+    margin-top: 48px;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.btn-health-school:visited{
+    color: #00997a;
+    text-decoration: none;
+}
+.btn-health-school:hover{
+    background-color: #F0F0F0;
+    text-decoration: none;
+    border: none;
+}
+.btn-health-school a:active{
+    text-decoration: none;
+}
+
+/*------------------------------Responsive menu region---------------------------------*/
+/*Hamburger button*/
+.mobile-nav-button {
+    width: 35px;
+    position: absolute;
+    margin: 2rem;
+    right: 0;
+    top: 23px;
+    z-index: 9999;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    display: none;
+}
+.mobile-nav-button .mobile-nav-button__line {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    transition: 1s ease;
+}
+.mobile-nav-button .mobile-nav-button__line:nth-of-type(2) { margin: 0.5rem 0; }
+
+/*Hamburger button transforsmation*/
+.mobile-nav-button .mobile-nav-button__line--1 {
+    transform: rotate(45deg);
+    top: 13px;
+    position: absolute;
+    background-color: gray;
+}
+.mobile-nav-button .mobile-nav-button__line--2 { display: none; }
+.mobile-nav-button .mobile-nav-button__line--3 {
+    transform: rotate(135deg);
+    top: 13px;
+    position: absolute;
+    background-color: gray;
+}
+/*Responsive menu style*/
+.responsive-menu{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #F5F5F5;
+    width: 100%;
+    z-index: 9998;
+}
+.responsive-menu ul li a{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #00997a;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: RobotoRegular;
+    overflow: hidden;
+    position: relative;
+}
+/*Responsive menu animation*/
+.responsive-menu ul li a:after{
+    content: '';
+    background: #33CC99;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.responsive-menu ul li a:hover{color: #fff}
+.responsive-menu ul li a:hover:after{right: 0;}
+
+/*-----------------------------------Gallery region-------------------------------------------*/
+.gallery-heading{
+    font-family: RobotoLight;
+    font-size: 36px;
+    color: #322d2d;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 67px;
+    margin-bottom: 58px;
+}
+.gallery-heading:after {
+    display: inline-block;
+    margin: 0 0 12px 65px;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #d6dd5b;
+    width: 145px;
+}
+.gallery-heading:before {
+    display: inline-block;
+    margin: 0 65px 12px 0;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #d6dd5b;
+    width: 145px;
+}
+
+/*Breadcrumbs*/
+.gallery-breadcrumbs{
+    margin-left: -15px;
+    margin-top: 18px;
+}
+.gallery-home-icon, .gallery-arrow{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    float: left;
+}
+.gallery-home-icon{
+    background-image: url("../img/gallery/home.png");
+}
+.gallery-arrow{
+    background-image: url("../img/gallery/arrow.png");
+    margin-left: 5px;
+}
+.gallery-breadcrumbs p{
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #b2b2b2;
+    margin-left: 4px;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+/*Top carousel region*/
+#gallery-top-carousel{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+}
+#gallery-top-carousel .carousel-control.left,.carousel-control.right {background-image:none;}
+.gallery-top-carousel-main .item .main-slider-item {
+    max-height: 405px;
+    height: 405px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-top-carousel-main .item .main-slider-item.it1 {
+    background-image: url("../img/10.jpg");
+}
+.gallery-top-carousel-main .item .main-slider-item.it2 {
+    background-image: url("../img/11.jpg");
+}
+.gallery-top-carousel-main .item .main-slider-item.it3 {
+    background-image: url("../img/12.jpg");
+}
+
+.gallery-caption{
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #a3a3a3;
+}
+
+/*Bottom carousel region*/
+#gallery-bottom-carousel .num {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #a3a3a3;
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+#gallery-bottom-carousel{
+    margin-bottom: 110px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 33px;
+}
+.gallery-bottom-carousel-wrapper{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.gallery-bottom-carousel-main .item .gallery-bottom-carousel-item{
+    height: 150px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-bottom-carousel-main .item .gallery-bottom-carousel-item:hover{
+    border: 4px solid #d0db4b;
+}
+#gallery-bottom-carousel .it1{
+    background-image: url("../img/2.jpg");
+}
+#gallery-bottom-carousel .it2{
+    background-image: url("../img/3.jpg");
+}
+#gallery-bottom-carousel .it3{
+    background-image: url("../img/5.jpg");
+}
+#gallery-bottom-carousel .it4{
+    background-image: url("../img/10.jpg");
+}
+#gallery-bottom-carousel .it5{
+    background-image: url("../img/11.jpg");
+}
+#gallery-bottom-carousel .it6{
+    background-image: url("../img/12.jpg");
+}
+#gallery-bottom-carousel .it7{
+    background-image: url("../img/13.jpg");
+}
+#gallery-bottom-carousel .it8{
+    background-image: url("../img/14.jpg");
+}
+#gallery-bottom-carousel .carousel-control 			 { width:  4%; }
+#gallery-bottom-carousel .carousel-control.left{
+    margin-left: -30px;
+}
+#gallery-bottom-carousel .carousel-control.right{
+    margin-right: -30px;
+}
+#gallery-bottom-carousel .carousel-control.left,.carousel-control.right {background-image:none;}
+/*Media for bottom carousel*/
+@media (max-width: 767px) {
+    .gallery-bottom-carousel-main .active.left { left: -100%; }
+    .gallery-bottom-carousel-main .next        { left:  100%; }
+    .gallery-bottom-carousel-main .prev		 { left: -100%; }
+    .gallery-bottom-carousel-main .active > div { display:none; }
+    .gallery-bottom-carousel-main .active > div:first-child { display:block; }
+    .gallery-bottom-carousel-main .active > div:first-child + div { display:block; }
+
+    #gallery-bottom-carousel .carousel-control.left{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    #gallery-bottom-carousel .carousel-control.right{
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    #gallery-bottom-carousel{
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .gallery-bottom-carousel-main .active.left { left: -50%; }
+    .gallery-bottom-carousel-main .next        { left:  50%; }
+    .gallery-bottom-carousel-main .prev		 { left: -50%; }
+    .gallery-bottom-carousel-main .active > div { display:none; }
+    .gallery-bottom-carousel-main .active > div:first-child { display:block; }
+    .gallery-bottom-carousel-main .active > div:first-child + div { display:block; }
+    .gallery-bottom-carousel-main .active > div:first-child + div + div { display:block; }
+
+    #gallery-bottom-carousel .carousel-control.left{
+        margin-left: 50px!important;
+    }
+    #gallery-bottom-carousel .carousel-control.right{
+        margin-right: 50px!important;
+    }
+    #gallery-bottom-carousel{
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px ) {
+    .gallery-bottom-carousel-main .active > div { display:none; }
+    .gallery-bottom-carousel-main .active > div:first-child { display:block; }
+    .gallery-bottom-carousel-main .active > div:first-child + div { display:block; }
+    .gallery-bottom-carousel-main .active > div:first-child + div + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .gallery-bottom-carousel-main .active.left { left: -45%; }
+    .gallery-bottom-carousel-main .next        { left:  25%; }
+    .gallery-bottom-carousel-main .prev		 { left: -25%; }
+    #gallery-bottom-carousel .carousel-control.left{
+        color: #7f7f7f;
+    }
+    #gallery-bottom-carousel .carousel-control.right{
+        color: #7f7f7f;
+    }
+}
+
+
+/*-----------------------------------------------Footer------------------------------------------------------------*/
+footer{
+    padding-top: 53px;
+    padding-bottom: 65px;
+    background-color: #00997a;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.footer-top{
+    border-bottom: 1px solid white;
+    padding-bottom: 45px;
+}
+.footer-bottom{
+    margin-top: 15px;
+}
+.list-heading{
+    color: white;
+    font-family: RobotoMedium;
+}
+footer ul{
+    list-style-type: none;
+    font-family: RobotoLight;
+}
+.footer-menu a{
+    display: block;
+}
+/*Navigation menu links pseudo classes*/
+.footer-menu a:link{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-menu a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-menu a:hover{
+    color: #d0db4b;
+    text-decoration: none;
+}
+.footer-menu a:active{
+    text-decoration: none;
+}
+/*Social buttons*/
+.footer-socials{
+    float: right;
+}
+.footer-socials-vk{
+    float: left;
+    background-color: #ccebe4;
+    padding: 8px 8px;
+    font-size: 18px;
+    color: #00997a;
+    border-radius: 100%;
+}
+.footer-socials-f{
+    float: left;
+    background-color: #ccebe4;
+    padding: 8px 13px;
+    font-size: 18px;
+    color: #00997a;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+.footer-socials a:hover{
+    text-decoration: none;
+}
+footer nav{
+    margin-right: -15%;
+    margin-top: 10px;
+}
+footer .logo-block-bottom{
+    top: 0%;
+}
+.step-logo-block{
+    left: 3%;
+}
+
+/*-----------------------------------Media queries region-------------------------------------------*/
+@media (max-width: 468px){
+    /*Header*/
+    .btn-health-school {
+        display: none!important;
+    }
+    /*Top carousel*/
+    .gallery-top-carousel-main .item .main-slider-item {
+        width: 100%;
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+        background-size: contain!important;
+    }
+    .gallery-top-carousel-main .item{
+        background-size: contain!important;
+    }
+    .gallery-bottom-carousel-main .item .gallery-bottom-carousel-item{
+        height: 120px!important;
+        background-position: 50% 25%;
+    }
+}
+/* Extra small devices (620px and less) */
+@media (max-width: 620px) {
+    /*Header*/
+    header nav{
+        display: none;
+    }
+    .mobile-nav-button{
+        display: block;
+    }
+    /*Gallery*/
+    .gallery-heading:before{
+        display: none;
+    }
+    .gallery-heading:after{
+        display: none;
+    }
+    .gallery-heading{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .gallery-bottom-carousel-main .item .gallery-bottom-carousel-item{
+        height: 150px;
+        background-position: 50% 25%;
+    }
+    /*Footer*/
+    .logo-block-bottom{
+        display: none;
+    }
+    footer nav{
+        float: left!important;
+    }
+}
+/* Small devices (767px and less) */
+@media (max-width: 767px) {
+    /*Header*/
+    header nav{
+        position: absolute;
+        left: 25%;
+    }
+    .btn-health-school{
+        display: none;
+    }
+    .health-link{
+        display: block!important;
+    }
+    header nav a{
+        font-size: 90%!important;
+    }
+    /*Gallery*/
+    .gallery-heading:before{
+        width: 140px;
+        margin-right: 60px;
+    }
+    .gallery-heading:after{
+        width: 140px;
+        margin-left: 60px;
+    }
+    .gallery-bottom-carousel-wrapper .num{
+        margin-left: 15px!important;
+    }
+    .gallery-breadcrumbs{
+        margin-left: -10px!important;
+    }
+    .gallery-bottom-carousel-main .item .gallery-bottom-carousel-item{
+        height: 180px;
+        background-position: 50% 25%;
+    }
+    /*Footer*/
+    .logo-block-bottom{
+        float: left;
+    }
+    footer nav{
+        float: right;
+    }
+    /*Top carousel*/
+    .gallery-top-carousel-main .item{
+        height: 300px!important;
+    }
+}
+/* Devices (992px and less) */
+@media (max-width: 992px) {
+    /*Header*/
+    .logo{
+        margin-right: 20px;
+    }
+    header nav{
+        margin-top: 25px !important;
+        float: none;
+    }
+    /*Footer*/
+    footer nav a{
+        font-size: 90%!important;
+    }
+
+}
+/* Devices (1200px and less) */
+@media (max-width: 1200px) {
+    /*Header*/
+    header a{
+        font-size: 90%;
+    }
+    .btn-health-school{
+        margin-left: -5px;
+    }
+    /*Footer*/
+    footer nav{
+        margin-right: -12%;
+    }
+}
